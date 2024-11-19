@@ -1,0 +1,255 @@
+#1 Dada uma lista de números inteiros, use uma função lambda para retornar uma lista com o quadrado de cada número.
+
+# Lista de números inteiros
+numeros = [1, 2, 3, 4, 5]
+
+# Usando lambda para obter o quadrado de cada número
+quadrados = list(map(lambda x: x**2, numeros))
+
+# Exibindo o resultado
+print(quadrados)
+
+#2 Dada uma lista de temperaturas em Celsius, use uma função lambda para convertê-las em Fahrenheit.
+
+# Lista de temperaturas em Celsius
+temperaturas_celsius = [0, 10, 20, 30, 40]
+
+# Usando lambda para converter de Celsius para Fahrenheit
+temperaturas_fahrenheit = list(map(lambda c: (c * 9/5) + 32, temperaturas_celsius))
+
+# Exibindo o resultado
+print(temperaturas_fahrenheit)
+
+
+#3 Dada uma lista de palavras, use uma função lambda para retornar uma lista com o comprimento de cada palavra.
+
+# Lista de palavras
+palavras = ["maçã", "banana", "cabeludo", "python", "livro"]
+
+# Usando lambda para obter o comprimento de cada palavra
+comprimentos = list(map(lambda palavra: len(palavra), palavras))
+
+# Exibindo o resultado
+print(comprimentos)
+
+
+#4 Use uma função lambda para dobrar os valores de uma lista de inteiros.
+
+# Lista de inteiros
+numeros = [1, 2, 3, 4, 5]
+
+# Usando lambda para dobrar os valores da lista
+dobrados = list(map(lambda x: x * 2, numeros))
+
+# Exibindo o resultado
+print(dobrados)
+
+#5 Dada uma lista de nomes, use uma função lambda para adicionar o prefixo "Sr./Sra." antes de cada nome.
+
+# Lista de nomes
+nomes = ["João", "Maria", "Carlos", "Ana", "Pedro"]
+
+# Usando lambda para adicionar o prefixo "Sr./Sra." antes de cada nome
+nomes_com_prefixo = list(map(lambda nome: "Sr./Sra. " + nome, nomes))
+
+# Exibindo o resultado
+print(nomes_com_prefixo)
+
+
+#6 Dada uma lista de números, use uma função lambda para retornar apenas os números pares.
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Usando lambda para filtrar os números pares
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+
+# Exibindo o resultado
+print(pares)
+
+
+#7 Dada uma lista de palavras, use uma função lambda para retornar apenas as palavras com menos de 5 caracteres.
+
+# Lista de palavras
+palavras = ["maçã", "banana", "pera", "abacaxi", "sol", "lua"]
+
+# Usando lambda para filtrar as palavras com menos de 5 caracteres
+palavras_curta = list(filter(lambda palavra: len(palavra) < 5, palavras))
+
+# Exibindo o resultado
+print(palavras_curta)
+
+
+#8 Dada uma lista de idades, use uma função lambda para retornar apenas as idades maiores que 18.
+
+# Lista de idades
+idades = [15, 22, 17, 19, 30, 12, 25, 18]
+
+# Usando lambda para filtrar idades maiores que 18
+maiores_que_18 = list(filter(lambda idade: idade > 18, idades))
+
+# Exibindo o resultado
+print(maiores_que_18)
+
+
+#9 Dada uma lista de strings, use uma função lambda para retornar as strings que começam com a letra "a".
+
+# Lista de strings
+strings = ["abacaxi", "banana", "amigo", "sol", "arroz", "cachorro"]
+
+# Usando lambda para filtrar as strings que começam com a letra "a"
+com_a = list(filter(lambda s: s.lower().startswith('a'), strings))
+
+# Exibindo o resultado
+print(com_a)
+
+
+#10 Dada uma lista de números inteiros, use uma função lambda para retornar apenas os números positivos.
+
+# Lista de números inteiros
+numeros = [-5, 3, 0, -1, 7, -3, 9]
+
+# Usando filter e lambda para filtrar apenas os números positivos
+positivos = list(filter(lambda x: x > 0, numeros))
+
+# Exibindo os números positivos
+print(positivos)
+
+
+#11 Use uma função lambda para calcular a soma de uma lista de números.
+
+from functools import reduce
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Usando reduce e lambda para somar todos os números da lista
+soma = reduce(lambda x, y: x + y, numeros)
+
+# Exibindo o resultado
+print(soma)
+
+
+#12 Use uma função lambda para multiplicar todos os elementos de uma lista.
+
+from functools import reduce
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Usando reduce e lambda para multiplicar todos os números da lista
+produto = reduce(lambda x, y: x * y, numeros)
+
+# Exibindo o resultado
+print(produto)
+
+
+#13 Use uma função lambda para encontrar o maior número em uma lista.
+
+from functools import reduce
+
+# Lista de números
+numeros = [5, 12, 8, 3, 19, 7]
+
+# Usando reduce e lambda para encontrar o maior número
+maior_numero = reduce(lambda x, y: x if x > y else y, numeros)
+
+# Exibindo o resultado
+print(maior_numero)
+
+
+#14 Use uma função lambda para concatenar uma lista de palavras em uma única string separada por espaços.
+
+from functools import reduce
+
+# Lista de palavras
+palavras = ["Olá", "mundo", "como", "vai", "você?"]
+
+# Usando reduce e lambda para concatenar as palavras com espaços
+frase = reduce(lambda x, y: x + " " + y, palavras)
+
+# Exibindo o resultado
+print(frase)
+
+
+#15 Use uma função lambda para somar os dígitos de uma lista de inteiros, onde cada número é tratado individualmente.
+
+# Lista de números inteiros
+numeros = [123, 456, 789]
+
+# Usando map e lambda para somar os dígitos de cada número
+soma_digitos = sum(map(lambda x: sum(int(digito) for digito in str(x)), numeros))
+
+# Exibindo o resultado
+print(soma_digitos)
+
+
+#16 Use uma função lambda para dobrar os números de uma lista e retornar apenas os números que são maiores que 20.
+
+# Lista de números inteiros
+numeros = [5, 10, 15, 7, 12, 18]
+
+# Usando map para dobrar os números e filter para retornar apenas os que são maiores que 20
+resultados = list(filter(lambda x: x > 20, map(lambda x: x * 2, numeros)))
+
+# Exibindo o resultado
+print(resultados)
+
+
+#17 Dada uma lista de palavras, use uma função lambda para encontrar todas as palavras que contêm a letra "e" e conte quantas são.
+
+# Lista de palavras
+palavras = ["gato", "elefante", "cachorro", "pedra", "sol", "estrela"]
+
+# Usando filter e lambda para encontrar as palavras que contêm a letra "e"
+palavras_com_e = list(filter(lambda palavra: 'e' in palavra, palavras))
+
+# Contando quantas palavras contêm a letra "e"
+quantidade = len(palavras_com_e)
+
+# Exibindo o resultado
+print(f"Palavras com 'e': {palavras_com_e}")
+print(f"Quantidade: {quantidade}")
+
+
+#18 Converta uma lista de temperaturas de Fahrenheit para Celsius usando uma função lambda e, em seguida, retorne apenas as temperaturas abaixo de 20°C.
+
+# Lista de temperaturas em Fahrenheit
+temperaturas_fahrenheit = [32, 50, 77, 104, 140, 212]
+
+# Usando map e lambda para converter as temperaturas de Fahrenheit para Celsius
+temperaturas_celsius = list(map(lambda f: (5 / 9) * (f - 32), temperaturas_fahrenheit))
+
+# Usando filter e lambda para retornar as temperaturas abaixo de 20°C
+temperaturas_abaixo_20 = list(filter(lambda c: c < 20, temperaturas_celsius))
+
+# Exibindo o resultado
+print(f"Temperaturas em Celsius abaixo de 20°C: {temperaturas_abaixo_20}")
+
+
+#19 Use uma função lambda para selecionar apenas os números pares de uma lista e, em seguida, somar esses números.
+
+# Lista de números inteiros
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Usando filter e lambda para selecionar apenas os números pares
+numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
+
+# Somando os números pares
+soma_pares = sum(numeros_pares)
+
+# Exibindo o resultado
+print(f"Números pares: {numeros_pares}")
+print(f"Soma dos números pares: {soma_pares}")
+
+
+#20 Use uma função lambda para substituir números negativos de uma lista por 0 e manter os positivos.
+
+# Lista de números inteiros
+numeros = [-5, 3, -1, 7, -3, 9, 0]
+
+# Usando map e lambda para substituir os números negativos por 0
+numeros_modificados = list(map(lambda x: x if x >= 0 else 0, numeros))
+
+# Exibindo o resultado
+print(f"Lista modificada: {numeros_modificados}")
