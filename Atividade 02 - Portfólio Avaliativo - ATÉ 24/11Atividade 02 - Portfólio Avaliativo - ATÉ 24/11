@@ -1,0 +1,93 @@
+# 1. Filtrar números ímpares
+def filtrar_impares(lista):
+    
+    retu
+
+    re
+
+   
+return [num for num in lista if num % 2 != 0]
+
+# 2. Dobrar cada elemento
+
+de
+def dobrar_elementos(lista):
+    return [num * 2 for num in lista]
+
+# 3. Remover duplicatas
+def remover_duplicatas(lista):
+    
+    retur
+
+    r
+
+ 
+return list(set(lista))
+
+# 4. Filtrar elementos divisíveis por um divisor
+def filtrar_divisiveis(lista, divisor):
+    return [num for num in lista if num % divisor == 0]
+
+# 5. Elementos comuns em duas listas
+def interseccao_listas(lista1, lista2):
+    return set(lista1).intersection(lista2)
+
+# 6. Inverter a ordem da lista
+def inverter_lista(lista):
+    return lista[::-1]
+
+# 7. Quadrado de cada número
+def quadrado_numeros(lista):
+    return [num ** 2 for num in lista]
+
+# 8. Elementos maiores que um valor
+def maiores_que(lista, valor):
+    return [num for num in lista if num > valor]
+
+# 9. Elementos únicos entre duas listas
+def unicos_entre_listas(lista1, lista2):
+    return list(set(lista1).symmetric_difference(lista2))
+
+# 10. Conjunto de elementos únicos
+def conjunto_unicos(lista):
+    return set(lista)
+
+# 11. Elementos únicos comuns a ambas as listas
+def unicos_comuns(lista1, lista2):
+    return list(set(lista1).intersection(set(lista2)))
+
+# 12. Elementos duplicados
+def elementos_duplicados(lista):
+    return list({x for x in lista if lista.count(x) > 1})
+
+# 13. Filtrar números pares
+def filtrar_pares(lista):
+    return [num for num in lista if num % 2 == 0]
+
+# 14. Índices de elementos maiores que um valor
+def indices_maiores(lista, valor):
+    return [i for i, num in enumerate(lista) if num > valor]
+
+# 15. Tamanho de cada string
+def tamanho_strings(lista):
+    return [len(string) for string in lista]
+
+# 16. Elevar números ao cubo
+def cubo_numeros(lista):
+    return [num ** 3 for num in lista]
+
+# 17. Elementos únicos em uma lista
+def elementos_unicos(lista):
+    return list(set(lista))
+
+# 18. Strings que começam com letra maiúscula
+def strings_maiusculas(lista):
+    return [string for string in lista if string[0].isupper()]
+
+# 19. Múltiplos de 3
+def multiplos_de_tres(lista):
+    return [num for num in lista if num % 3 == 0]
+
+# 20. Interseção ordenada entre duas listas
+def interseccao_ordenada(lista1, lista2):
+    return sorted(set(lista1).intersection(lista2))
