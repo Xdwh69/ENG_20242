@@ -1,0 +1,110 @@
+#1 - Crie uma função para que o usuário digite o seu nome e a sua cidade. O programa deve exibir "Olá, [nome]! Você vive em [cidade].“
+def saudacao():
+    nome = input("Digite seu nome: ")
+    cidade = input("Digite a cidade onde você vive: ")
+    print(f"Olá, {nome}! Você vive em {cidade}.")
+
+saudacao()
+
+
+#2 - Crie uma função para que o usuário digite o comprimento e a largura de um retângulo. O programa deve exibir a área e o perímetro do retângulo.
+def calcular_retangulo():
+    comprimento = float(input("Digite o comprimento do retângulo (em metros): "))
+    largura = float(input("Digite a largura do retângulo (em metros): "))
+    area = comprimento * largura
+    perimetro = 2 * (comprimento + largura)
+    print(f"A área do retângulo é {area:.2f} m² e o perímetro é {perimetro:.2f} m.")
+
+calcular_retangulo()
+
+
+#3 - Crie uma função para que o usuário digite uma medida em metros. O programa deve converter essa medida para centímetros e milímetros e exibir o resultado.
+def converter_medida():
+    metros = float(input("Digite a medida em metros: "))
+    centimetros = metros * 100
+    milimetros = metros * 1000
+    print(f"{metros} metros equivalem a {centimetros:.2f} cm e {milimetros:.2f} mm.")
+
+converter_medida()
+
+
+#4 - Crie uma função para que o usuário digite a largura e a altura de um retângulo. O programa deve calcular e exibir a área do retângulo.base = float(input("Digite o tamanho da base do retangulo (cm):"))
+def calcular_area():
+    largura = float(input("Digite a largura do retângulo (em cm): "))
+    altura = float(input("Digite a altura do retângulo (em cm): "))
+    area = largura * altura
+    print(f"A área do retângulo é {area:.2f} cm².")
+
+calcular_area()
+
+
+#5 - Crie uma função para que o usuário digite as idades de duas pessoas. O programa deve exibir se as idades são iguais ou diferentes.
+def comparar_idades():
+    idade1 = int(input("Digite a idade da primeira pessoa: "))
+    idade2 = int(input("Digite a idade da segunda pessoa: "))
+    if idade1 == idade2:
+        print("As idades são iguais.")
+    else:
+        print("As idades são diferentes.")
+
+comparar_idades()
+
+
+#6 - Crie uma função para que o usuário digite seu peso (em kg) e sua altura (em metros). O programa deve calcular e exibir o Índice de Massa Corporal (IMC).
+def calcular_imc():
+    peso = float(input("Digite seu peso (em kg): "))
+    altura = float(input("Digite sua altura (em metros): "))
+    imc = peso / (altura ** 2)
+    print(f"Seu Índice de Massa Corporal (IMC) é {imc:.2f}.")
+
+calcular_imc()
+
+
+#7 - Crie uma função para que o usuário digite dois números. O programa deve exibir se o primeiro número é maior, menor ou igual ao segundo número.
+def comparar_numeros():
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    if num1 > num2:
+        print("O primeiro número é maior que o segundo.")
+    elif num1 < num2:
+        print("O primeiro número é menor que o segundo.")
+    else:
+        print("Os números são iguais.")
+
+comparar_numeros()
+
+
+#8 - Crie uma função para que o usuário digite três números. O programa deve calcular e exibir a média aritmética desses números.
+def calcular_media():
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    num3 = float(input("Digite o terceiro número: "))
+    media = (num1 + num2 + num3) / 3
+    print(f"A média aritmética dos números é {media:.2f}.")
+
+calcular_media()
+
+
+#9 - Crie uma função para que o usuário digite o raio e a altura de um cilindro. O programa deve calcular e exibir o volume do cilindro.
+def calcular_volume_cilindro():
+    import math
+    raio = float(input("Digite o raio do cilindro (em metros): "))
+    altura = float(input("Digite a altura do cilindro (em metros): "))
+    volume = math.pi * (raio ** 2) * altura
+    print(f"O volume do cilindro é {volume:.2f} m³.")
+
+calcular_volume_cilindro()
+
+
+#10 - Crie uma função para que o usuário digite duas palavras. O programa deve exibir se as palavras são iguais ou diferentes.
+def comparar_palavras():
+    palavra1 = input("Digite a primeira palavra: ")
+    palavra2 = input("Digite a segunda palavra: ")
+    if palavra1 == palavra2:
+        print("As palavras são iguais.")
+    else:
+        print("As palavras são diferentes.")
+
+comparar_palavras()
+
+
