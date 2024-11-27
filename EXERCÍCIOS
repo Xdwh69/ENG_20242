@@ -1,0 +1,101 @@
+#1 - Crie uma função Lambda para que o usuário digite o seu nome e a sua cidade. O programa deve exibir "Olá, [nome]! Você vive em [cidade].“
+saudacao = lambda nome, cidade: f"Olá, {nome}! Você vive em {cidade}."
+
+
+nome = input("Digite seu nome: ")
+cidade = input("Digite sua cidade: ")
+print(saudacao(nome, cidade))
+
+
+#2 - Crie uma função Lambda para que o usuário digite o comprimento e a largura de um retângulo. O programa deve exibir a área e o perímetro do retângulo.
+calcular_retangulo = lambda comprimento, largura: (
+    f"A área é {comprimento * largura:.2f} e o perímetro é {2 * (comprimento + largura):.2f}."
+)
+
+
+comprimento = float(input("Digite o comprimento do retângulo: "))
+largura = float(input("Digite a largura do retângulo: "))
+print(calcular_retangulo(comprimento, largura))
+
+
+#3 - Crie uma função Lambda para que o usuário digite uma medida em metros. O programa deve converter essa medida para centímetros e milímetros e exibir o resultado.
+converter_medida = lambda metros: (
+    f"{metros} metros equivalem a {metros * 100:.2f} cm e {metros * 1000:.2f} mm."
+)
+
+
+metros = float(input("Digite a medida em metros: "))
+print(converter_medida(metros))
+
+
+#4 - Crie uma função Lambda para que o usuário digite a largura e a altura de um retângulo. O programa deve calcular e exibir a área do retângulo.base = float(input("Digite o tamanho da base do retangulo (cm):"))
+calcular_area = lambda largura, altura: f"A área do retângulo é {largura * altura:.2f} cm²."
+
+
+largura = float(input("Digite a largura do retângulo (cm): "))
+altura = float(input("Digite a altura do retângulo (cm): "))
+print(calcular_area(largura, altura))
+
+
+#5 - Crie uma função Lambda para que o usuário digite as idades de duas pessoas. O programa deve exibir se as idades são iguais ou diferentes.
+comparar_idades = lambda idade1, idade2: (
+    "As idades são iguais." if idade1 == idade2 else "As idades são diferentes."
+)
+
+
+idade1 = int(input("Digite a idade da primeira pessoa: "))
+idade2 = int(input("Digite a idade da segunda pessoa: "))
+print(comparar_idades(idade1, idade2))
+
+
+#6 - Crie uma função Lambda para que o usuário digite seu peso (em kg) e sua altura (em metros). O programa deve calcular e exibir o Índice de Massa Corporal (IMC).
+calcular_imc = lambda peso, altura: f"Seu IMC é {peso / (altura ** 2):.2f}."
+
+peso = float(input("Digite seu peso (kg): "))
+altura = float(input("Digite sua altura (m): "))
+print(calcular_imc(peso, altura))
+
+
+#7 - Crie uma função Lambda para que o usuário digite dois números. O programa deve exibir se o primeiro número é maior, menor ou igual ao segundo número.
+comparar_numeros = lambda num1, num2: (
+    "O primeiro número é maior." if num1 > num2 else 
+    "O primeiro número é menor." if num1 < num2 else 
+    "Os números são iguais."
+)
+
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+print(comparar_numeros(num1, num2))
+
+
+#8 - Crie uma função Lambda para que o usuário digite três números. O programa deve calcular e exibir a média aritmética desses números.
+calcular_media = lambda n1, n2, n3: f"A média é {(n1 + n2 + n3) / 3:.2f}."
+
+
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
+n3 = float(input("Digite o terceiro número: "))
+print(calcular_media(n1, n2, n3))
+
+
+#9 - Crie uma função Lambda para que o usuário digite o raio e a altura de um cilindro. O programa deve calcular e exibir o volume do cilindro.
+calcular_volume_cilindro = lambda raio, altura: (
+    f"O volume do cilindro é {3.14159 * raio**2 * altura:.2f} m³."
+)
+
+
+raio = float(input("Digite o raio do cilindro (m): "))
+altura = float(input("Digite a altura do cilindro (m): "))
+print(calcular_volume_cilindro(raio, altura))
+
+
+#10 - Crie uma função Lambda para que o usuário digite duas palavras. O programa deve exibir se as palavras são iguais ou diferentes.
+comparar_palavras = lambda p1, p2: (
+    "As palavras são iguais." if p1 == p2 else "As palavras são diferentes."
+)
+
+
+palavra1 = input("Digite a primeira palavra: ")
+palavra2 = input("Digite a segunda palavra: ")
+print(comparar_palavras(palavra1, palavra2))
