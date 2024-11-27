@@ -1,0 +1,83 @@
+#1 - Escreva uma função que receba uma lista de números como entrada e retorne a soma de todos os elementos da lista.
+def soma_lista(lista):
+    return sum(lista)
+
+
+print(soma_lista([1, 2, 3, 4, 5]))  # Saída: 15
+
+
+#2 - Crie uma função que receba uma lista como entrada e retorne a lista invertida, ou seja, a ordem dos elementos deve ser invertida.
+def inverter_lista(lista):
+    return lista[::-1]
+
+
+print(inverter_lista([1, 2, 3, 4, 5]))  # Saída: [5, 4, 3, 2, 1]
+
+
+#3 - Escreva uma função que receba uma lista de números como entrada e retorne a média dos elementos da lista.
+def media_lista(lista):
+    return sum(lista) / len(lista) if lista else 0
+
+
+print(media_lista([10, 20, 30]))  # Saída: 20.0
+
+
+#4 - Crie uma função que receba uma lista de strings como entrada e retorne a lista contendo o tamanho de cada string.
+def tamanho_strings(lista):
+    return [len(s) for s in lista]
+
+
+print(tamanho_strings(["Python", "função", "lista"]))  # Saída: [6, 6, 5]
+
+
+#5 - Escreva uma função que receba duas listas como entrada e retorne uma nova lista contendo apenas os elementos que são comuns a ambas as listas.
+def elementos_comuns(lista1, lista2):
+    return list(set(lista1) & set(lista2))
+
+
+print(elementos_comuns([1, 2, 3], [2, 3, 4]))  # Saída: [2, 3]
+
+
+#6 - Crie uma função que receba uma lista como entrada e retorne uma nova lista contendo apenas os elementos únicos (sem repetição) da lista original.
+def elementos_unicos(lista):
+    return list(set(lista))
+
+
+print(elementos_unicos([1, 2, 2, 3, 4, 4]))  # Saída: [1, 2, 3, 4]
+
+
+#7 - Escreva uma função que receba uma lista de números como entrada e retorne uma lista contendo apenas os números pares da lista original.
+def numeros_pares(lista):
+    return [num for num in lista if num % 2 == 0]
+
+
+print(numeros_pares([1, 2, 3, 4, 5, 6]))  # Saída: [2, 4, 6]
+
+
+#8 - Crie uma função que receba uma lista de números como entrada e retorne o maior elemento da lista.
+def maior_elemento(lista):
+    return max(lista) if lista else None
+
+
+print(maior_elemento([10, 20, 30, 5]))  # Saída: 30
+
+
+#9 - Escreva uma função que receba uma lista como entrada e retorne True se a lista estiver ordenada de forma crescente, e False caso contrário.
+def esta_ordenada(lista):
+    return lista == sorted(lista)
+
+
+print(esta_ordenada([1, 2, 3]))  # Saída: True
+print(esta_ordenada([3, 2, 1]))  # Saída: False
+
+#10 - Crie uma função que receba duas listas como entrada e retorne True se uma lista for subconjunto da outra, e False caso contrário.
+def eh_subconjunto(lista1, lista2):
+    return set(lista1).issubset(set(lista2)) or set(lista2).issubset(set(lista1))
+
+
+print(eh_subconjunto([1, 2], [1, 2, 3]))  # Saída: True
+print(eh_subconjunto([1, 4], [2, 3]))     # Saída: False
+
+
+
+
